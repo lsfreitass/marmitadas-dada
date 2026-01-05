@@ -1,0 +1,48 @@
+{
+  "brand": "Marmitadas Dadá",
+  "whatsappPhoneE164": "+351928494074",
+  "email": "contacto@marmitadasdada.pt",
+  "weekLabel": "Ementa da semana • 05 a 09 de Janeiro",
+
+  "menus": {
+    "fit": [
+      "Seg (05/01) • Estrogonofe de frango, arroz branco e batata — 8,00€",
+      "Ter (06/01) • Fricassé de frango, arroz e batata palha — 9,00€",
+      "Qua (07/01) • Frango grelhado, purê de batata e salada — 8,00€",
+      "Qui (08/01) • Panqueca de frango, arroz e legumes — 8,00€",
+      "Sex (09/01) • Frango grelhado, arroz de alho e coentro, legumes e salada — 8,00€"
+    ],
+    "tradicional": [
+      "Seg (05/01) • Panqueca de carne moída com salada verde — 9,00€",
+      "Ter (06/01) • Sobrecoxa assada, arroz, feijão e farofa — 8,00€",
+      "Qua (07/01) • Carne moída, purê, arroz e feijão — 9,00€",
+      "Qui (08/01) • Filé de peixe ao forno, arroz e salada — 9,00€",
+      "Sex (09/01) • Carne assada, arroz, farofa e batata corada — 10,00€"
+    ]
+  },
+
+  "packs": [
+    { "name": "Pack 5 Marmitas", "meals": 5, "price": "desde 40€", "tag": "Ideal para a semana" },
+    { "name": "Pack 10 Marmitas", "meals": 10, "price": "desde 78€", "tag": "Mais económico" },
+    { "name": "Pack Família", "meals": 15, "price": "sob consulta", "tag": "Para toda a casa" }
+  ],
+
+  "deliveryAreas": [
+    "Lisboa",
+    "Oeiras",
+    "Cascais"
+  ],
+
+  "deliveryRules": [
+    "Encomendas até às 18h do dia anterior",
+    "Entregas combinadas por WhatsApp",
+    "Pagamento via MBWay ou numerário"
+  ],
+
+  "prepSteps": [
+    "Retire do frigorífico 5 minutos antes de aquecer.",
+    "Micro-ondas: 2 a 4 minutos.",
+    "Na frigideira: lume baixo com um fio de azeite.",
+    "Consumir até 3 dias refrigerado."
+  ]
+}

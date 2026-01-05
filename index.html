@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marmitadas Dadá</title>
+  <meta name="description" content="Marmitas frescas e práticas. Cardápio semanal, packs e encomendas por WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Marmitadas Dadá">
+        <span class="brand__logo">🍲</span>
+        <span class="brand__name">Marmitadas <strong>Dadá</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#packs">Packs</a>
+        <a href="#ementa">Ementa</a>
+        <a href="#entregas">Entregas</a>
+        <a href="#como">Como preparar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="cta" id="btn-whatsapp-top" href="#" target="_blank" rel="noreferrer">Encomendar</a>
+
+      <button class="hamb" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="mobilemenu" hidden>
+      <a href="#sobre">Sobre</a>
+      <a href="#packs">Packs</a>
+      <a href="#ementa">Ementa</a>
+      <a href="#entregas">Entregas</a>
+      <a href="#como">Como preparar</a>
+      <a href="#contacto">Contacto</a>
+      <a class="cta" id="btn-whatsapp-mobile" href="#" target="_blank" rel="noreferrer">Encomendar</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="pill">Cardápio semanal • Packs • Entrega</p>
+          <h1>Marmitas gostosas, práticas e com cara de comida caseira.</h1>
+          <p class="lead">
+            Escolha seu pack, veja a ementa da semana e encomende em 1 minuto.
+          </p>
+          <div class="hero__actions">
+            <a class="cta" id="btn-whatsapp-hero" href="#" target="_blank" rel="noreferrer">Pedir no WhatsApp</a>
+            <a class="ghost" href="#ementa">Ver ementa</a>
+          </div>
+
+          <div class="features">
+            <div class="card">
+              <h3>Ingredientes selecionados</h3>
+              <p>Receitas equilibradas e feitas com cuidado.</p>
+            </div>
+            <div class="card">
+              <h3>Pronto para a semana</h3>
+              <p>Organize sua rotina com packs.</p>
+            </div>
+            <div class="card">
+              <h3>Entrega combinada</h3>
+              <p>Entregas em dias definidos (ajustável).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__panel">
+          <div class="panel__box">
+            <h2>Doses & estilos</h2>
+            <div class="chips">
+              <span class="chip">Fit</span>
+              <span class="chip">Low Carb</span>
+              <span class="chip">Zero Carb</span>
+              <span class="chip">XL</span>
+              <span class="chip">Família</span>
+            </div>
+            <p class="muted">Personalize os nomes e gramagens no <code>menu.json</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre a Marmitadas Dadá</h2>
+        <p class="lead2">
+          Um projeto para facilitar sua semana com marmitas frescas, saborosas e práticas.
+          Aqui você controla a ementa e atualiza em segundos.
+        </p>
+      </div>
+    </section>
+
+    <section id="ementa" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Ementa da semana</h2>
+            <p class="muted" id="weekLabel">Carregando...</p>
+          </div>
+          <a class="ghost" href="#packs">Quero um pack</a>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Menu Fit</h3>
+            <ol id="fitList" class="list"></ol>
+          </div>
+          <div class="card">
+            <h3>Menu Vegetariano</h3>
+            <ol id="vegList" class="list"></ol>
+          </div>
+        </div>
+
+        <div class="card note">
+          <strong>Dica:</strong> edite o ficheiro <code>menu.json</code> e o site atualiza automaticamente.
+        </div>
+      </div>
+    </section>
+
+    <section id="packs" class="section">
+      <div class="container">
+        <h2>Packs</h2>
+        <p class="muted">Clique e encomende (você configura preços e mensagem no WhatsApp).</p>
+
+        <div id="packsGrid" class="packs"></div>
+      </div>
+    </section>
+
+    <section id="entregas" class="section">
+      <div class="container">
+        <h2>Entregas</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Onde entregamos</h3>
+            <p>Defina aqui suas zonas/cidades e regras.</p>
+            <ul class="bullets" id="deliveryAreas"></ul>
+          </div>
+          <div class="card">
+            <h3>Como funciona</h3>
+            <ul class="bullets" id="deliveryRules"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como" class="section">
+      <div class="container">
+        <h2>Como preparar</h2>
+        <div class="card">
+          <ol class="bullets" id="prepSteps"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Fale com a gente</h3>
+            <p><strong>WhatsApp:</strong> <span id="phoneText"></span></p>
+            <p><strong>Email:</strong> <span id="emailText"></span></p>
+            <p class="muted">Horário e morada são opcionais (configure no <code>menu.json</code>).</p>
+          </div>
+          <div class="card">
+            <h3>Receber novidades</h3>
+            <form class="form" onsubmit="return false;">
+              <label>
+                Seu email
+                <input type="email" placeholder="voce@exemplo.com" />
+              </label>
+              <button class="cta" type="button">Subscrever (demo)</button>
+              <p class="muted small">Isto é um formulário demo. Depois podemos ligar ao Mailchimp/Brevo.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Marmitadas Dadá • Todos os direitos reservados.</p>
+      <div class="footer__links">
+        <a href="#inicio">Topo</a>
+        <a href="#ementa">Ementa</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
