@@ -11,6 +11,18 @@
   --border: rgba(255,255,255,.10);
   --cta: linear-gradient(90deg, var(--green), var(--orange));
 }
+body{ background: var(--bg); color: var(--text); }
+.card, .panel__box{ background: rgba(255,255,255,.03); border: 1px solid var(--border); }
+.muted{ color: var(--muted); }
+
+.cta{ background: var(--cta); color: #071018; border: 0; }
+.ghost{ border: 1px solid var(--border); color: var(--text); }
+
+.pill{
+  border: 1px solid var(--border);
+  background: rgba(243,230,208,.08); /* bege suave */
+  color: var(--beige);
+}
 :root{
   --bg:#0b0f14;
   --card:#0f1621;
@@ -377,5 +389,6 @@ h1{
   .menu-hero{ flex-direction: column; align-items: flex-start; }
   .menu-hero-img{ width: 100%; height: 140px; }
 }
+
 
 
