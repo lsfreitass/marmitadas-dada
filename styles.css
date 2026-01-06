@@ -1,13 +1,14 @@
 :root{
-  --bg: #F3E6D0;        /* bege */
-  --surface: #FFFFFF;   /* cartões */
-  --text: #111827;      /* texto */
-  --muted: #6B7280;     /* texto secundário */
+  --bg: #0B0F14;
+  --surface: #111827;
+  --text: #F9FAFB;
+  --muted: #CBD5E1;
 
-  --orange: #F28C28;    /* laranja */
-  --green: #1FBF75;     /* verde */
-  --border: rgba(17,24,39,.12);
+  --orange: #F28C28;
+  --green: #1FBF75;
+  --beige: #F3E6D0;
 
+  --border: rgba(255,255,255,.10);
   --cta: linear-gradient(90deg, var(--green), var(--orange));
 }
 :root{
@@ -376,4 +377,5 @@ h1{
   .menu-hero{ flex-direction: column; align-items: flex-start; }
   .menu-hero-img{ width: 100%; height: 140px; }
 }
+
 
