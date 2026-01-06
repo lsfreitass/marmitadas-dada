@@ -1,0 +1,6 @@
+name = "marmitadas-dada1"
+main = "worker.js"
+compatibility_date = "2026-01-06"
+
+[assets]
+directory = "."
