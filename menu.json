@@ -1,48 +1,86 @@
 {
-  "brand": "Marmitadas Dadá",
-  "whatsappPhoneE164": "+351928494074",
-  "email": "contacto@marmitadasdada.pt",
-  "weekLabel": "Ementa da semana • 05 a 09 de Janeiro",
-
-  "menus": {
-    "fit": [
-      "Seg (05/01) • Estrogonofe de frango, arroz branco e batata — 8,00€",
-      "Ter (06/01) • Fricassé de frango, arroz e batata palha — 9,00€",
-      "Qua (07/01) • Frango grelhado, purê de batata e salada — 8,00€",
-      "Qui (08/01) • Panqueca de frango, arroz e legumes — 8,00€",
-      "Sex (09/01) • Frango grelhado, arroz de alho e coentro, legumes e salada — 8,00€"
-    ],
-    "tradicional": [
-      "Seg (05/01) • Panqueca de carne moída com salada verde — 9,00€",
-      "Ter (06/01) • Sobrecoxa assada, arroz, feijão e farofa — 8,00€",
-      "Qua (07/01) • Carne moída, purê, arroz e feijão — 9,00€",
-      "Qui (08/01) • Filé de peixe ao forno, arroz e salada — 9,00€",
-      "Sex (09/01) • Carne assada, arroz, farofa e batata corada — 10,00€"
+  "brand": {
+    "name": "Marmitadas Dadá",
+    "tagline": "Nunca foi tão fácil comer bem!",
+    "whatsapp": "351928494074",
+    "whatsappMessage": "Olá Marmitadas Dadá! Quero fazer uma encomenda.",
+    "deliveryNote": "Entregas de terça a sexta • Lisboa e Margem Sul (ajuste como quiser)"
+  },
+  "theme": {
+    "bg": "#0b0f14",
+    "card": "#0f1621",
+    "text": "#e8eef7",
+    "muted": "#9bb0c6",
+    "primary": "#21c57a",
+    "primary2": "#4aa3ff",
+    "accent": "#f7b267"
+  },
+  "highlights": [
+    { "title": "Sem processados", "text": "Ingredientes simples e sabor de comida caseira." },
+    { "title": "Equilibrado", "text": "Opções fit, low carb e vegetarianas." },
+    { "title": "Prático", "text": "Só aquecer e servir — ideal para a semana." }
+  ],
+  "doses": [
+    { "name": "Zero Carb", "grams": "300g", "desc": "Proteína + legumes (sem arroz/massa)" },
+    { "name": "Low Carb", "grams": "270g", "desc": "Porção reduzida de hidratos" },
+    { "name": "Fit", "grams": "340g", "desc": "Equilíbrio perfeito do dia a dia" },
+    { "name": "XL", "grams": "550g", "desc": "Porção grande para mais fome" },
+    { "name": "Família", "grams": "1300g", "desc": "Para partilhar" }
+  ],
+  "week": {
+    "title": "Ementa da semana",
+    "subtitle": "Ementa para entregas de 5 a 9 de Janeiro",
+    "categories": [
+      {
+        "key": "fit",
+        "title": "Menu Fit",
+        "image": "./images/menu-fit.jpg",
+        "items": [
+          { "code": "F1", "name": "Frango grelhado", "desc": "Arroz de alho e coentro + legumes", "price": "8,00€", "photo": "./images/fit1.jpg" },
+          { "code": "F2", "name": "Strogonoff de frango", "desc": "Arroz basmati + brócolos", "price": "8,00€", "photo": "./images/fit2.jpg" }
+        ]
+      },
+      {
+        "key": "veg",
+        "title": "Menu Vegetariano",
+        "image": "./images/menu-veg.jpg",
+        "items": [
+          { "code": "V1", "name": "Caril de grão", "desc": "Arroz basmati + legumes", "price": "8,00€", "photo": "./images/veg1.jpg" },
+          { "code": "V2", "name": "Strogonoff de cogumelos", "desc": "Arroz basmati + salada", "price": "8,00€", "photo": "./images/veg2.jpg" }
+        ]
+      }
     ]
   },
-
   "packs": [
-    { "name": "Pack 5 Marmitas", "meals": 5, "price": "desde 40€", "tag": "Ideal para a semana" },
-    { "name": "Pack 10 Marmitas", "meals": 10, "price": "desde 78€", "tag": "Mais económico" },
-    { "name": "Pack Família", "meals": 15, "price": "sob consulta", "tag": "Para toda a casa" }
+    { "title": "Pack 5", "qty": 5, "price": "39,90€", "note": "Ideal para testar", "image": "./images/pack5.jpg" },
+    { "title": "Pack 10", "qty": 10, "price": "74,90€", "note": "Semana completa", "image": "./images/pack10.jpg" },
+    { "title": "Pack 20", "qty": 20, "price": "139,90€", "note": "Melhor custo/benefício", "image": "./images/pack20.jpg" }
   ],
-
-  "deliveryAreas": [
-    "Lisboa",
-    "Oeiras",
-    "Cascais"
-  ],
-
-  "deliveryRules": [
-    "Encomendas até às 18h do dia anterior",
-    "Entregas combinadas por WhatsApp",
-    "Pagamento via MBWay ou numerário"
-  ],
-
-  "prepSteps": [
-    "Retire do frigorífico 5 minutos antes de aquecer.",
-    "Micro-ondas: 2 a 4 minutos.",
-    "Na frigideira: lume baixo com um fio de azeite.",
-    "Consumir até 3 dias refrigerado."
-  ]
+  "sections": {
+    "about": {
+      "title": "Sobre",
+      "text": "Cozinhamos refeições caseiras, frescas e equilibradas para simplificar a tua semana."
+    },
+    "delivery": {
+      "title": "Entregas",
+      "cards": [
+        { "title": "Onde entregamos", "text": "Lisboa • Oeiras • Cascais • Sintra (ajuste a lista)" },
+        { "title": "Como funciona", "text": "Escolhe o pack, seleciona as refeições e encomenda no WhatsApp." }
+      ]
+    },
+    "prep": {
+      "title": "Como preparar",
+      "steps": [
+        "Micro-ondas: 3–5 min (retirar tampa se necessário).",
+        "Frigorífico: conservar até X dias (define o teu padrão).",
+        "Congelar: até X semanas (define o teu padrão)."
+      ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "phoneLabel": "+351 928 494 074",
+      "email": "teuemail@exemplo.com",
+      "address": "Lisboa, Portugal (ajusta)"
+    }
+  }
 }
